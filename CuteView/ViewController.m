@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "BXLMessageNoticeView.h"
 
-@interface ViewController ()
+@interface ViewController ()<BXLPanCuteViewDelegate>{
+    BXLMessageNoticeView * _cuteView;
+}
 
 @end
 
@@ -16,7 +19,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    _cuteView = [BXLMessageNoticeView new];
+    _cuteView.countString = @"13";
+    _cuteView.delegate = self;
+    [self.view addSubview:_cuteView];
+}
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    _cuteView.center = self.view.center;
+}
+- (void)BXLPanCuteViewDidGestureToDismiss {
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        _cuteView.hidden = NO;
+    });
 }
 
 

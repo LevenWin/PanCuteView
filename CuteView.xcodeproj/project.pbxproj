@@ -15,6 +15,9 @@
 		0DB8069C20299B3500FA7385 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB8069B20299B3500FA7385 /* main.m */; };
 		0DB806A620299B3500FA7385 /* CuteViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB806A520299B3500FA7385 /* CuteViewTests.m */; };
 		0DB806B120299B3500FA7385 /* CuteViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB806B020299B3500FA7385 /* CuteViewUITests.m */; };
+		0DB806C320299BAE00FA7385 /* BXLMessageNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB806C020299BAE00FA7385 /* BXLMessageNoticeView.m */; };
+		0DB806C420299BAE00FA7385 /* BXLPanCuteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB806C220299BAE00FA7385 /* BXLPanCuteView.m */; };
+		7BB21452AE9F40932ECDBBB6 /* libPods-CuteView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 641F21228328F760FD5C421E /* libPods-CuteView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,13 @@
 		0DB806AC20299B3500FA7385 /* CuteViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuteViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DB806B020299B3500FA7385 /* CuteViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CuteViewUITests.m; sourceTree = "<group>"; };
 		0DB806B220299B3500FA7385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DB806BF20299BAE00FA7385 /* BXLMessageNoticeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXLMessageNoticeView.h; sourceTree = "<group>"; };
+		0DB806C020299BAE00FA7385 /* BXLMessageNoticeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXLMessageNoticeView.m; sourceTree = "<group>"; };
+		0DB806C120299BAE00FA7385 /* BXLPanCuteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXLPanCuteView.h; sourceTree = "<group>"; };
+		0DB806C220299BAE00FA7385 /* BXLPanCuteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXLPanCuteView.m; sourceTree = "<group>"; };
+		641F21228328F760FD5C421E /* libPods-CuteView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CuteView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2C24CB034A1846ED74CD134 /* Pods-CuteView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuteView.release.xcconfig"; path = "Pods/Target Support Files/Pods-CuteView/Pods-CuteView.release.xcconfig"; sourceTree = "<group>"; };
+		F555456EF9060CED740ACE8D /* Pods-CuteView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuteView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CuteView/Pods-CuteView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BB21452AE9F40932ECDBBB6 /* libPods-CuteView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +96,8 @@
 				0DB806A420299B3500FA7385 /* CuteViewTests */,
 				0DB806AF20299B3500FA7385 /* CuteViewUITests */,
 				0DB8068A20299B3500FA7385 /* Products */,
+				A3CF03D0AD5C58212B5635B0 /* Pods */,
+				83A45EEB1A540D833FFF804B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +117,7 @@
 				0DB8068C20299B3500FA7385 /* AppDelegate.h */,
 				0DB8068D20299B3500FA7385 /* AppDelegate.m */,
 				0DB8068F20299B3500FA7385 /* ViewController.h */,
+				0DB806BE20299BAE00FA7385 /* CuteView */,
 				0DB8069020299B3500FA7385 /* ViewController.m */,
 				0DB8069220299B3500FA7385 /* Main.storyboard */,
 				0DB8069520299B3500FA7385 /* Assets.xcassets */,
@@ -132,6 +146,34 @@
 			path = CuteViewUITests;
 			sourceTree = "<group>";
 		};
+		0DB806BE20299BAE00FA7385 /* CuteView */ = {
+			isa = PBXGroup;
+			children = (
+				0DB806BF20299BAE00FA7385 /* BXLMessageNoticeView.h */,
+				0DB806C020299BAE00FA7385 /* BXLMessageNoticeView.m */,
+				0DB806C120299BAE00FA7385 /* BXLPanCuteView.h */,
+				0DB806C220299BAE00FA7385 /* BXLPanCuteView.m */,
+			);
+			path = CuteView;
+			sourceTree = "<group>";
+		};
+		83A45EEB1A540D833FFF804B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				641F21228328F760FD5C421E /* libPods-CuteView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A3CF03D0AD5C58212B5635B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F555456EF9060CED740ACE8D /* Pods-CuteView.debug.xcconfig */,
+				A2C24CB034A1846ED74CD134 /* Pods-CuteView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0DB806B520299B3500FA7385 /* Build configuration list for PBXNativeTarget "CuteView" */;
 			buildPhases = (
+				D303F7B8140B4517F9C8F807 /* [CP] Check Pods Manifest.lock */,
 				0DB8068520299B3500FA7385 /* Sources */,
 				0DB8068620299B3500FA7385 /* Frameworks */,
 				0DB8068720299B3500FA7385 /* Resources */,
+				E3B0B3707AD304BA3D69ABA3 /* [CP] Embed Pods Frameworks */,
+				3FC10A011628F38ABDE1E161 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,13 +305,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3FC10A011628F38ABDE1E161 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CuteView/Pods-CuteView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D303F7B8140B4517F9C8F807 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E3B0B3707AD304BA3D69ABA3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CuteView/Pods-CuteView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0DB8068520299B3500FA7385 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0DB8069120299B3500FA7385 /* ViewController.m in Sources */,
+				0DB806C320299BAE00FA7385 /* BXLMessageNoticeView.m in Sources */,
 				0DB8069C20299B3500FA7385 /* main.m in Sources */,
+				0DB806C420299BAE00FA7385 /* BXLPanCuteView.m in Sources */,
 				0DB8068E20299B3500FA7385 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +523,7 @@
 		};
 		0DB806B620299B3500FA7385 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F555456EF9060CED740ACE8D /* Pods-CuteView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -442,6 +538,7 @@
 		};
 		0DB806B720299B3500FA7385 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2C24CB034A1846ED74CD134 /* Pods-CuteView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
